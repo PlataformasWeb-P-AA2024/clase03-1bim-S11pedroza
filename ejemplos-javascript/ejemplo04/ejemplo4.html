@@ -23,7 +23,8 @@
         console.log(v);
       }
 
-      document.getElementById("parrafo1").innerText = v; 
+      document.getElementById("parrafo1").innerHTML = v; 
+      //Se pone innerHTML ya que si se deja como innertext toma la variable v que es el br/ es decir el espacio, en cambio asi ya lo toma como valor
       document.getElementById("parrafo2").innerHTML = i;
 
   </script>
