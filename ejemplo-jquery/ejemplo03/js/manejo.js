@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#mensajeFinal').text("Su carrera es: "+ texto1 + ". Su universidad es: "
       + texto2);
 
-    $('#mensajeFinal').css( "color", "red" );
+    $('#mensajeFinal').css( "color", "black" );
     console.log(texto1);
   });
 
@@ -14,12 +14,12 @@ $(document).ready(function() {
   });
 
   $("#nombreCarrera").on( "mouseover", function() {
-      $('#nombreUniversidad').css( "color", "green" );
+      $('#nombreUniversidad').css( "color", "white" );
   });
 
   $("#nombreUniversidad").on( "mouseover", function() {
-      $('#nombreUniversidad').css( "color", "black" );
-      $('body').css( "background", "black" );
+      $('#nombreUniversidad').css( "color", "white" );
+      $('body').css( "background", "white" );
   });
 
 
