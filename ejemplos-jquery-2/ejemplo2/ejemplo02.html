@@ -16,14 +16,15 @@
     $(document).ready(function() {
       var url = "https://pkgstore.datahub.io/core/continent-codes/continent-codes_json/data/60d6baef1250bc2b01fd0148dccca518/continent-codes_json.json";
       $( "button" ).click(function() {
-            $.ajax({
+        //el ajax es una peticiòn
+            $.ajax({ 
               dataType: 'json',
               url: url 
             }).then(function(data) {
-              
-              for(var i=0; i<data.length; i++){
+            //el ajax se captura en la variable data
+              for(var i=0; i<data.length; i++){ //la informacion que esta en el las primeras llaves es el valor 0
                 console.log(data[i]);
-                console.log(data[i].Code);
+                console.log(data[i].Code); //el code y el name ya son objetos
                 console.log(data[i].Name);
               }
             })      
